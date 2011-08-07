@@ -13477,3 +13477,98 @@ ActionController::RoutingError (No route matches [GET] "/images/background.jpg")
   
 
 Rendered /Users/pigats/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 16:45:46 -0700
+  Processing by SiteController#index as HTML
+  [1m[36mConfession Load (108.3ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mConfession Load (80.0ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5
+Rendered site/index.html.haml within layouts/application (8742.7ms)
+  [1m[36mUser Load (81.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_flash.html.haml (0.3ms)
+Completed 200 OK in 10734ms (Views: 8572.5ms | ActiveRecord: 911.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 16:46:22 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (80.3ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (80.7ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (546.6ms)
+  [1m[35mUser Load (79.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1089ms (Views: 112.1ms | ActiveRecord: 883.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 16:46:23 -0700
+  Processing by SiteController#index as HTML
+  [1m[36mConfession Load (80.0ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mConfession Load (80.6ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5
+Rendered site/index.html.haml within layouts/application (498.3ms)
+  [1m[36mUser Load (80.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1202ms (Views: 301.5ms | ActiveRecord: 881.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 16:46:26 -0700
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2954ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (2ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 35745)
+Served asset /application.css - 200 OK (3550ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 16:46:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 16:46:31 -0700
+Served asset /background.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 16:46:31 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 16:46:31 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2011-08-07 16:46:36 -0700
+  Processing by ConfessionsController#new as HTML
+Rendered confessions/_form.html.haml (327.6ms)
+Rendered confessions/new.html.haml within layouts/application (447.4ms)
+  [1m[35mUser Load (81.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1068ms (Views: 489.4ms | ActiveRecord: 569.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 16:46:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 16:46:38 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 16:46:38 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started POST "/confessions" for 127.0.0.1 at 2011-08-07 16:46:41 -0700
+  Processing by ConfessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2yLPnZhNz2FxsVEe3N4hhX925IKWlH3lLK/EuLi/+X0=", "confession"=>{"url"=>"", "transcript"=>"", "feelings"=>""}, "tags"=>"", "commit"=>"Create Confession"}
+Completed 500 Internal Server Error in 263ms
+
+NoMethodError (undefined method `current_user?' for #<ConfessionsController:0x000001034c6d38>):
+  app/controllers/confessions_controller.rb:50:in `create'
+
+Rendered /Users/pigats/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/pigats/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/pigats/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)

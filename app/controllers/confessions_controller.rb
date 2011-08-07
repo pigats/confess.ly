@@ -47,7 +47,7 @@ class ConfessionsController < ApplicationController
   # POST /confessions.json
   def create
     @confession = Confession.new(params[:confession])
-    @confession.user = current_user if current_user?
+    @confession.user = current_user if user_signed_in?
     
     params[:tags].split.each do |tag|
     	
