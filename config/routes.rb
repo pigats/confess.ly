@@ -1,5 +1,7 @@
 Conversionly::Application.routes.draw do
 
+  get "site/index"
+
   resources :tags
 
   resources :comments
@@ -9,7 +11,7 @@ Conversionly::Application.routes.draw do
 	devise_for :users
 	
 	
-	root :to => "confessions#index"  
+	root :to => "site#index"  
 
 		
   # The priority is based upon order of creation:

@@ -3,10 +3,18 @@
 	%head
 		%title Confession.ly
 		= stylesheet_link_tag "application"
-		
 		= csrf_meta_tags
+		:plain
+			<meta property="og:title" content="confess.ly" />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="http://confessly.com" />
+			<meta property="og:image" content="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc6/205971_215627161823325_215290978523610_664890_310940_n.jpg" />
+			<meta property="og:site_name" content="confess.ly" />
+			<meta property="fb:admins" content="100000163155754" />
+		
 	%body
 		%header
+
 			%p#user
 				- if user_signed_in?	
 					= current_user.email
@@ -18,8 +26,11 @@
 				- else
 					= link_to "Sign in", new_user_session_path
 		
-			%h2 Confession.ly
-			
+			%h2 
+				%a{:href=>"/", :title=>"home"} Confess.ly
+
+			= link_to 'New Confession', new_confession_path, :id=>"newconfession"
+				
 		= render "/shared/flash"
 		%section#main
 			= content_for?(:content) ? yield(:content) : yield

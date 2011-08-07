@@ -1,0 +1,42 @@
+%section#leftbar
+	%nav
+		%h4 The 7 Sins
+		%ul
+			%li#pride Pride
+			%li#greed Greed
+			%li#gluttony Gluttony
+			%li#luxury Luxury
+			%li#sloth Sloth
+			%li#wrath Wrath
+			%li#envy Envy
+		
+	%section#contacts
+		%h4 Connect with us
+		%ul 
+			%li#facebook 
+				%a{:href=>"https://www.facebook.com/Confessly"} Facebook
+			%li#twitter 
+				%a{:href=>"http://twitter.com/confessly"} Twitter
+			%li#rss Subscribe	
+			
+
+%section#page
+	%h1 The Online Confissionary
+	- @latest.each do |confession|
+		%article
+			%p
+				= confession.transcript[0..500] 
+				-
+				= link_to 'view', confession_path(confession)
+	%p
+		= link_to 'See all confessions', confessions_path
+	
+%section#rightbar
+	%section#top5
+		%h4 Top 5
+		%ul
+			- @top.each do |confession|
+				%li
+					= confession.transcript[0..50]
+					- 
+					= link_to 'view', confession_path(confession)		

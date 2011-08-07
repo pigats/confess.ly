@@ -10,7 +10,7 @@
 					%li= msg
 
 	.field
-		= f.label :url
+		= f.label 'Soundcloud link'
 		%br/
 		= f.text_field :url
 
@@ -27,7 +27,7 @@
 	.field
 		%label{:for=>"tags"}Tags
 		%br/
-		%textarea#tags{:name=>"tags"}
+		%input#tags{:type=>"text", :name=>"tags"}
 	
 	.actions
 		= f.submit

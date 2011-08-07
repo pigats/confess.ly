@@ -13,7 +13,7 @@
 
 
 html
-	background: white
+	background: white image_url('background.jpg')
 
 body
 	+blueprint-typography
@@ -22,35 +22,113 @@ body
 	overflow: auto
 
 	>header
-		margin: 18px auto
+		margin: 18px auto 0
+		
+		h2
+			+replace-text(image_path('logo.png'))
+			width: 303px
+			height: 72px
+			margin-right: 400px
+			display: inline-block
+			
+			a
+				display: block
+				width: 303px
+				height: 72px				
 		
 		p#user
 			float: right
 			padding: 4px
 			margin-top: -18px
-			background: #fff
+			margin-bottom: 0
+			background: white
+			+border-bottom-radius(5px)
+
+		a#newconfession
+			display: inline-block
+			margin-top: 36px
+			width: 159px
+			height: 38px
+			+replace-text(image_path('confess.png'))
+			+border-radius(15px)
+			+box-shadow(white, 0, 0, 0px)	
+			
+			&:hover
+				+box-shadow(white, 0, 0, 10px)
+				
+			
 	
 	>section#main
-		+column(24)
-		
-		> nav
-					
+		background: white	
+		+column(23)
+		padding: 18px 20px
+		+border-radius(5px)
+		border: 3px solid #6c96a6
+		color: #6c96a6
+
+		h1
+			font-size: 2em
+			color: #6c96a6
+			border-bottom: 1px solid #6c96a6
+
+		>section#page
+			+column(13)
+			
+			
+		>section#leftbar, >section#rightbar
+			+column(5)
+			
+			nav, section#contacts, section#top5
+				+column(4)
+				background: #eee
+				padding: 18px 20px
+				margin-bottom: 18px
+				+border-radius(5px)
+			
+
+			h4
+				color: #6c96a6			
+				border-bottom: 1px solid #6c96a6
+			
+		>section#rightbar
+			+last		
+			
+			p
+				padding-bottom: 17px
+				border-bottom: 1px solid #6c96a6 
+										
 		.notice
 			+notice
 	
 		.alert, #error_explanation
 			+error
 
-		.video
+		.embed
 			margin-bottom: 18px		
+
+		p#views
+			display: inline-block
 		
+		form.edit_confession
+			display: inline-block	!important
+			
+
+		ul#comments
+			list-style-type: none
+			padding-left: 0px
+			
+			input[type=submit]
+			
+			li
+				padding-bottom: 8px
+				margin-bottom: 9px
+				border-bottom: 1px solid #6c96a6
+			
 	>footer 
 		+column(24)
 		clear: both
 		text-align: center
-		margin-top: 18px
-		border-top: 1px solid #ddd
-		padding-top: 17px
+		margin: 18px 0
 		font-size: .8em
 
 form
