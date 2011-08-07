@@ -13131,3 +13131,40 @@ Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javasc
 Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery-ui.min.js  (0ms)  (pid 34474)
 Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.min.js  (1ms)  (pid 34474)
 Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.min.js  (0ms)  (pid 34474)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:49:16 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (79.3ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (79.5ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (493.6ms)
+  [1m[35mUser Load (78.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1092ms (Views: 195.9ms | ActiveRecord: 869.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:49:19 -0700
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (3114ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (3ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (3280ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:49:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:49:23 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:49:23 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
