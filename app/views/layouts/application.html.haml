@@ -19,7 +19,7 @@
 					= link_to "Sign in", new_user_session_path
 		
 			%h2 Confession.ly
-		
+			
 		= render "/shared/flash"
 		%section#main
 			= content_for?(:content) ? yield(:content) : yield

@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-	before_filter :authenticate_user!
+	before_filter :authenticate_user!, :only => [:create, :edit]
 
   # GET /comments
   # GET /comments.json
@@ -43,10 +43,13 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(params[:comment])
-
+    @comment.user = current_user
+    @confession = Confession.find_by_id(params[:confession_id])
+						
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
+      	@confession.comments << @comment
+        format.html { redirect_to @confession, notice: 'Comment was successfully created.' }
         format.json { render json: @comment, status: :created, location: @comment }
       else
         format.html { render action: "new" }

@@ -19,6 +19,8 @@ class ConfessionsController < ApplicationController
 		@confession.views += 1
 		@confession.save
 		
+		@comment = Comment.new
+		
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @confession }

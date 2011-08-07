@@ -32,8 +32,33 @@
 		= f.submit 'down'
 
 %p
-	%b Tags
+	%b Tags:
 	- @confession.tags.each do |tag|
 		= tag.name
-		
+
+%p
+	%b Comments:
+	%ul
+		%li 
+			- if user_signed_in?	
+				= form_for(@comment) do |f|
+					.field
+						= f.text_field :comment
+						= hidden_field_tag "confession_id", @confession.id
+					.actions
+						= f.submit
+			- else
+				You need to 
+				= link_to 'sign in', new_user_session_path
+				or 
+				= link_to 'sign up', new_user_registration_path
+				before commenting	
+		- @confession.comments.each do |comment|
+			%li
+				= comment.comment
+				(
+				= time_ago_in_words(comment.created_at) 
+				ago
+				)
+	
 = link_to 'Back', confessions_path
