@@ -40,7 +40,7 @@ module Conversionly
     config.assets.enabled = true
 
     # Needed by devise    
-    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+    config.action_mailer.default_url_options = { :host => 'www.confessionly.com' }
  
  		# Changing field_with_errors from div (default) to p
 		config.action_view.field_error_proc = Proc.new { |html_tag, instance| "<p class=\"field field_with_errors\">#{html_tag}</p>".html_safe }
