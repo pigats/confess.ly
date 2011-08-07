@@ -13127,3 +13127,7 @@ Served asset /confess.png - 304 Not Modified (0ms)
 
 Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 14:07:45 -0700
 Served asset /logo.png - 304 Not Modified (0ms)
+Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery-ui.min.js  (1ms)  (pid 34474)
+Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery-ui.min.js  (0ms)  (pid 34474)
+Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.min.js  (1ms)  (pid 34474)
+Compiled ~/.rvm/gems/ruby-1.9.2-p0/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.min.js  (0ms)  (pid 34474)
