@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  url: MyString
+  transcript: MyString
+  feelings: MyString
+  views: 1
+  up: 1
+  down: 1
+
+two:
+  user_id: 1
+  url: MyString
+  transcript: MyString
+  feelings: MyString
+  views: 1
+  up: 1
+  down: 1

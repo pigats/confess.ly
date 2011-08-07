@@ -1,0 +1,39 @@
+%p
+	%b Id:
+	= @confession.id
+
+%iframe.video{:width=>"560", :height=>"349", :src=>@confession.url, :frameborder=>"0", :allowfullscreen=>true}
+
+%p
+	%b Transcript:
+	= @confession.transcript
+
+%p
+	%b Feelings:
+	= @confession.feelings
+
+%p
+	%b Views:
+	= @confession.views
+	
+%p	
+	= form_for @confession do |f|
+		= f.label :up
+		\:
+		= @confession.up
+		= f.hidden_field :up, :value => @confession.up + 1
+		= f.submit 'up'
+			
+	= form_for @confession do |f|
+		= f.label :down
+		\:
+		= @confession.down
+		= f.hidden_field :down, :value => @confession.down + 1
+		= f.submit 'down'
+
+%p
+	%b Tags
+	- @confession.tags.each do |tag|
+		= tag.name
+		
+= link_to 'Back', confessions_path

@@ -1,0 +1,85 @@
+  [1m[36m (45.4ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (8.9ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (29.9ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+Interrupt: : INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36m (16.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (15.4ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (24.6ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "commands" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "commands"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "commands" ("arguments", "result", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', '2011-07-25 15:18:49', '2011-07-28 17:26:26', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 980190962)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+PGError: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=() already exists.
+: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2011-07-28 17:26:26', '2011-07-28 17:26:26', 298486374)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "commands" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL

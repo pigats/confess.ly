@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Confessionbox::Application.load_tasks
+Conversionly::Application.load_tasks

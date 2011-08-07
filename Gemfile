@@ -1,19 +1,22 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem 'rails', '3.1.0.rc5'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'haml'
+gem 'mysql2'
 gem 'devise'
-gem 'twilio-ruby'
+gem 'trails'
+
 
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'compass', git: 'https://github.com/chriseppstein/compass.git', branch: 'rails31'
 gem 'coffee-script'
 gem 'uglifier'
+
 
 gem 'jquery-rails'
 

@@ -1,0 +1,31 @@
+!!! 5
+%html
+	%head
+		%title Confession.ly
+		= stylesheet_link_tag "application"
+		
+		= csrf_meta_tags
+	%body
+		%header
+			%p#user
+				- if user_signed_in?	
+					= current_user.email
+					[
+					= link_to "Edit", edit_user_registration_path
+					|
+					= link_to "Sign out", destroy_user_session_path, :method => :delete
+					]
+				- else
+					= link_to "Sign in", new_user_session_path
+		
+			%h2 Confession.ly
+		
+		= render "/shared/flash"
+		%section#main
+			= content_for?(:content) ? yield(:content) : yield
+			
+				
+		%footer
+			\#swbay 2011 
+		
+		= javascript_include_tag "application"

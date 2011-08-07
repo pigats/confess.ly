@@ -1,0 +1,29 @@
+<h1>Listing confessions</h1>
+
+<table>
+  <tr>
+  	<th>Id</th>
+    <th>Transcript</th>
+    <th>Feelings</th>
+    <th>Views</th>
+    <th>Up</th>
+    <th>Down</th>
+    <th></th>
+  </tr>
+
+<% @confessions.each do |confession| %>
+  <tr>
+  	<td><%= confession.id %></td>
+    <td><%= confession.transcript %></td>
+    <td><%= confession.feelings %></td>
+    <td><%= confession.views %></td>
+    <td><%= confession.up %></td>
+    <td><%= confession.down %></td>
+    <td><%= link_to 'Show', confession %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Confession', new_confession_path %>

@@ -1,4 +1,17 @@
-Confessionbox::Application.routes.draw do
+Conversionly::Application.routes.draw do
+
+  resources :tags
+
+  resources :comments
+
+  resources :confessions
+
+	devise_for :users
+	
+	
+	root :to => "confessions#index"  
+
+		
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
