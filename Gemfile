@@ -13,11 +13,14 @@ gem 'pg'
 
 
 # Asset template engines
-gem 'sass-rails', "~> 3.1.0.rc"
-gem 'compass', git: 'https://github.com/chriseppstein/compass.git', branch: 'rails31'
-gem 'coffee-script'
-gem 'uglifier'
+group :assets do
 
+	gem 'sass-rails', "~> 3.1.0.rc"
+	gem 'compass', git: 'https://github.com/chriseppstein/compass.git', branch: 'rails31'
+	gem 'coffee-script'
+	gem 'uglifier'
+
+end
 
 gem 'jquery-rails'
 
