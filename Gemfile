@@ -9,6 +9,7 @@ gem 'haml'
 gem 'mysql2'
 gem 'devise'
 gem 'trails'
+gem 'pg'
 
 
 # Asset template engines
