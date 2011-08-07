@@ -13168,3 +13168,237 @@ Served asset /logo.png - 304 Not Modified (0ms)
 
 Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:49:23 -0700
 Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:50:38 -0700
+  Processing by SiteController#index as HTML
+  [1m[36mConfession Load (80.3ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mConfession Load (79.1ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5
+Rendered site/index.html.haml within layouts/application (499.1ms)
+  [1m[36mUser Load (80.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1050ms (Views: 150.3ms | ActiveRecord: 881.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:50:40 -0700
+WARNING on line 15 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2133ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (1ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (2173ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:50:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:50:42 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:50:42 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:51:06 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (78.9ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (79.4ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (492.2ms)
+  [1m[35mUser Load (80.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1090ms (Views: 106.9ms | ActiveRecord: 900.7ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:51:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:51:07 -0700
+WARNING on line 15 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2402ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (1ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (2625ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:51:10 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:51:10 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:52:00 -0700
+  Processing by SiteController#index as HTML
+  [1m[36mConfession Load (81.5ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mConfession Load (79.2ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5
+Rendered site/index.html.haml within layouts/application (562.9ms)
+  [1m[36mUser Load (79.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1069ms (Views: 171.0ms | ActiveRecord: 877.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:52:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:52:01 -0700
+WARNING on line 15 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2182ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (1ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (2230ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:52:04 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:52:04 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:52:13 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (78.9ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (79.1ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (491.4ms)
+  [1m[35mUser Load (79.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1028ms (Views: 128.7ms | ActiveRecord: 875.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:52:14 -0700
+WARNING on line 15 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (1667ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (2ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (1684ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:52:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:52:16 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:52:16 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:52:29 -0700
+  Processing by SiteController#index as HTML
+  [1m[36mConfession Load (79.1ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mConfession Load (79.0ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5
+Rendered site/index.html.haml within layouts/application (492.4ms)
+  [1m[36mUser Load (78.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1052ms (Views: 157.7ms | ActiveRecord: 875.9ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:52:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:52:31 -0700
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2181ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (2ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (2231ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:52:33 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:52:33 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 15:52:41 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (79.5ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (78.8ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (489.3ms)
+  [1m[35mUser Load (78.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1053ms (Views: 101.3ms | ActiveRecord: 868.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 15:52:43 -0700
+WARNING on line 120 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 54 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 57 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2175ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (1ms)  (pid 23079)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 23079)
+Served asset /application.css - 200 OK (2222ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 15:52:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png?1312750439" for 127.0.0.1 at 2011-08-07 15:52:45 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png?1312740346" for 127.0.0.1 at 2011-08-07 15:52:45 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg?1312740346" for 127.0.0.1 at 2011-08-07 15:52:45 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
