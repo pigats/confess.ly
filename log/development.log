@@ -13672,3 +13672,33 @@ Served asset /background.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 17:02:08 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 17:02:48 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (79.4ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (80.5ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (492.3ms)
+  [1m[35mUser Load (80.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1022ms (Views: 119.2ms | ActiveRecord: 883.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 17:02:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 17:02:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 17:02:49 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 17:02:50 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 17:02:50 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
