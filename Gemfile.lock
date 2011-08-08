@@ -137,6 +137,7 @@ DEPENDENCIES
   mysql2
   pg
   rails (= 3.1.0.rc5)
+  rake
   sass-rails (~> 3.1.0.rc)
   therubyracer-heroku
   trails

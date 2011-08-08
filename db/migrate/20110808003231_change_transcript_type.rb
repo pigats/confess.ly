@@ -1,6 +1,6 @@
 class ChangeTranscriptType < ActiveRecord::Migration
   def up
-		change_table :confession do |t|
+		change_table :confessions do |t|
   		t.change :transcript, :text
 		end  	
   end

@@ -10,7 +10,7 @@ gem 'mysql2'
 gem 'devise'
 gem 'trails'
 gem 'pg'
-
+gem 'rake'
 
 # Asset template engines
 group :assets do

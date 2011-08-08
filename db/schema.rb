@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110807013325) do
+ActiveRecord::Schema.define(:version => 20110808003231) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20110807013325) do
   create_table "confessions", :force => true do |t|
     t.integer  "user_id"
     t.string   "url"
-    t.string   "transcript"
+    t.text     "transcript"
     t.string   "feelings"
     t.integer  "views",      :default => 0
     t.integer  "up",         :default => 0

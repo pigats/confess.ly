@@ -14554,3 +14554,25 @@ Served asset /confess.png - 304 Not Modified (0ms)
 
 Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 17:19:32 -0700
 Served asset /background.jpg - 304 Not Modified (0ms)
+  [1m[36m (78.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110806210028)
+Migrating to AddNicknameToUser (20110806210942)
+Migrating to CreateConfessions (20110807010210)
+Migrating to CreateComments (20110807010934)
+Migrating to ConfessionsTagsJoinTable (20110807011342)
+Migrating to CreateTags (20110807011612)
+Migrating to AddConfessionIdToComment (20110807013325)
+Migrating to ChangeTranscriptType (20110808003231)
+Mysql2::Error: Table 'cbox.confession' doesn't exist: SHOW FIELDS FROM `confession`
+  [1m[36m (79.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110806210028)
+Migrating to AddNicknameToUser (20110806210942)
+Migrating to CreateConfessions (20110807010210)
+Migrating to CreateComments (20110807010934)
+Migrating to ConfessionsTagsJoinTable (20110807011342)
+Migrating to CreateTags (20110807011612)
+Migrating to AddConfessionIdToComment (20110807013325)
+Migrating to ChangeTranscriptType (20110808003231)
+  [1m[35m (114.6ms)[0m  ALTER TABLE `confessions` CHANGE `transcript` `transcript` text DEFAULT NULL
+  [1m[36m (94.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110808003231')[0m
+  [1m[35m (83.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
