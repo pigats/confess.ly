@@ -18,7 +18,7 @@
 			%li#twitter 
 				%a{:href=>"http://twitter.com/confessly"} Twitter
 			%li#shop
-				%a{:href=>"http://www.cafepress.com/confessly"} Shop for sinful items
+				%a{:href=>"http://www.cafepress.com/confessly"} Buy sinful items
 			
 
 %section#page
@@ -38,7 +38,4 @@
 		%ol
 			- @top.each do |confession|
 				%li
-					= confession.transcript[0..10]
-					&hellip;
-					- 
-					= link_to 'view', confession_path(confession)		
+					= link_to 'Confession', confession_path(confession)		
