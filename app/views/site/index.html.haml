@@ -17,7 +17,8 @@
 				%a{:href=>"https://www.facebook.com/Confessly"} Facebook
 			%li#twitter 
 				%a{:href=>"http://twitter.com/confessly"} Twitter
-			%li#rss Subscribe	
+			%li#shop
+				%a{:href=>"http://www.cafepress.com/confessly"} Shop for sinful items
 			
 
 %section#page
@@ -25,7 +26,7 @@
 	- @latest.each do |confession|
 		%article
 			%p
-				= confession.transcript[0..500] 
+				= confession.transcript
 				-
 				= link_to 'view', confession_path(confession)
 	%p
@@ -37,6 +38,7 @@
 		%ul
 			- @top.each do |confession|
 				%li
-					= confession.transcript[0..50]
+					= confession.transcript[0..10]
+					&hellip;
 					- 
 					= link_to 'view', confession_path(confession)		
