@@ -15215,3 +15215,111 @@ Served asset /confess.png - 304 Not Modified (0ms)
 
 Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:37:07 -0700
 Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 18:58:20 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (80.8ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (80.6ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (497.8ms)
+  [1m[35mUser Load (81.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 1108ms (Views: 173.2ms | ActiveRecord: 887.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:58:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:58:21 -0700
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:58:22 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:58:22 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:58:22 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/2" for 127.0.0.1 at 2011-08-07 18:58:22 -0700
+  Processing by ConfessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConfession Load (81.0ms)[0m  [1mSELECT `confessions`.* FROM `confessions` WHERE `confessions`.`id` = 2 LIMIT 1[0m
+  [1m[35m (79.9ms)[0m  BEGIN
+  [1m[36m (80.6ms)[0m  [1mUPDATE `confessions` SET `views` = 171, `updated_at` = '2011-08-08 01:58:23' WHERE `confessions`.`id` = 2[0m
+  [1m[35m (89.1ms)[0m  COMMIT
+  [1m[36mTag Load (79.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `confessions_tags` ON `tags`.`id` = `confessions_tags`.`tag_id` WHERE `confessions_tags`.`confession_id` = 2[0m
+  [1m[35mUser Load (82.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (81.6ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`confession_id` = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered confessions/show.html.haml within layouts/application (1234.0ms)
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 2045ms (Views: 210.7ms | ActiveRecord: 1700.9ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:58:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:58:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:58:25 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:58:25 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:58:25 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/2" for 127.0.0.1 at 2011-08-07 18:58:33 -0700
+  Processing by ConfessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mConfession Load (83.1ms)[0m  SELECT `confessions`.* FROM `confessions` WHERE `confessions`.`id` = 2 LIMIT 1
+  [1m[36m (80.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (79.9ms)[0m  UPDATE `confessions` SET `views` = 172, `updated_at` = '2011-08-08 01:58:34' WHERE `confessions`.`id` = 2
+  [1m[36m (89.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mTag Load (80.7ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `confessions_tags` ON `tags`.`id` = `confessions_tags`.`tag_id` WHERE `confessions_tags`.`confession_id` = 2
+  [1m[36mUser Load (81.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (81.9ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`confession_id` = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered confessions/show.html.haml within layouts/application (1235.2ms)
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1959ms (Views: 195.4ms | ActiveRecord: 1722.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:58:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:58:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:58:37 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:58:37 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:58:37 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
