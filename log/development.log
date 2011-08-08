@@ -13895,3 +13895,94 @@ Served asset /confess.png - 304 Not Modified (0ms)
 
 Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 17:10:30 -0700
 Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-07 17:11:00 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.haml (2.4ms)
+Rendered devise/registrations/new.html.haml within layouts/application (184.8ms)
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 339ms (Views: 60.3ms | ActiveRecord: 242.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 17:11:00 -0700
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 17:11:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 17:11:01 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 17:11:01 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 17:11:01 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-08-07 17:11:13 -0700
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3GgpfnYDi0bFtQCs9fgiPUyR2i7ENKCLDz5RkIQCVgA=", "user"=>{"nickname"=>"Andrea", "email"=>"andrea@fruktarbo.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+WARNING: Can't mass-assign protected attributes: nickname
+  [1m[36m (78.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (83.6ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'andrea@fruktarbo.com' LIMIT 1
+  [1m[36mUser Load (80.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'PlR6i5yyQ7x4V5TLiy16' LIMIT 1[0m
+  [1m[35mSQL (79.1ms)[0m  INSERT INTO `users` (`confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `last_sign_in_at`, `last_sign_in_ip`, `nickname`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `updated_at`) VALUES ('2011-08-08 00:11:14', 'PlR6i5yyQ7x4V5TLiy16', NULL, '2011-08-08 00:11:14', NULL, NULL, 'andrea@fruktarbo.com', '$2a$10$mcZ7Y60447vye3aDum32ieWIMCmpEW5WiajOi5YVP4pbKhNSkP.3.', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2011-08-08 00:11:14')
+Rendered devise/mailer/confirmation_instructions.html.haml (16.0ms)
+
+Sent mail to andrea@fruktarbo.com (182ms)
+Date: Sun, 07 Aug 2011 17:11:17 -0700
+From: Conversionly@mimesishpc.com
+Reply-To: Conversionly@mimesishpc.com
+To: andrea@fruktarbo.com
+Message-ID: <4e3f29a58730c_8ba182c060487321@Chloe.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>
+  Welcome
+  andrea@fruktarbo.com
+  !
+</p>
+<p>You can confirm your account through the link below:</p>
+<p><a href="http://www.confessionly.com/users/confirmation?confirmation_token=PlR6i5yyQ7x4V5TLiy16">Confirm my account</a></p>
+  [1m[36m (103.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4441ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-07 17:11:17 -0700
+  Processing by SiteController#index as HTML
+  [1m[35mConfession Load (81.2ms)[0m  SELECT `confessions`.* FROM `confessions` ORDER BY created_at DESC LIMIT 5
+  [1m[36mConfession Load (79.6ms)[0m  [1mSELECT `confessions`.* FROM `confessions` ORDER BY views DESC LIMIT 5[0m
+Rendered site/index.html.haml within layouts/application (550.5ms)
+Rendered shared/_flash.html.haml (0.2ms)
+Completed 200 OK in 704ms (Views: 108.2ms | ActiveRecord: 561.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 17:11:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 17:11:18 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 17:11:19 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 17:11:19 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 17:11:19 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
