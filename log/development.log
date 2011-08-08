@@ -14849,3 +14849,170 @@ Served asset /confess.png - 304 Not Modified (0ms)
 
 Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:09:24 -0700
 Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2011-08-07 18:13:25 -0700
+  Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (79.1ms)[0m  [1mSELECT `confessions`.* FROM `confessions` [0m
+Rendered confessions/index.html.erb within layouts/application (10.4ms)
+  [1m[35mUser Load (79.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 801ms (Views: 159.5ms | ActiveRecord: 638.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:13:26 -0700
+WARNING on line 133 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 55 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 58 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2355ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (2ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 35745)
+Served asset /application.css - 200 OK (2432ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:13:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:13:29 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:13:29 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:13:29 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2011-08-07 18:14:08 -0700
+  Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (80.1ms)[0m  [1mSELECT `confessions`.* FROM `confessions` [0m
+Rendered confessions/index.html.erb within layouts/application (78.7ms)
+  [1m[35mUser Load (79.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.3ms)
+Completed 200 OK in 769ms (Views: 126.0ms | ActiveRecord: 640.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:14:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:14:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:14:10 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:14:10 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:14:10 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2011-08-07 18:14:50 -0700
+  Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (80.9ms)[0m  [1mSELECT `confessions`.* FROM `confessions` [0m
+Rendered confessions/index.html.erb within layouts/application (12.3ms)
+  [1m[35mUser Load (82.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 706ms (Views: 63.8ms | ActiveRecord: 640.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:14:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:14:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:14:52 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:14:52 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:14:52 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2011-08-07 18:15:16 -0700
+  Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (79.6ms)[0m  [1mSELECT `confessions`.* FROM `confessions` [0m
+Rendered confessions/index.html.erb within layouts/application (11.6ms)
+  [1m[35mUser Load (82.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 858ms (Views: 113.8ms | ActiveRecord: 741.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:15:17 -0700
+WARNING on line 133 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 55 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+WARNING: Passing separate arguments for a single shadow to box-shadow is deprecated. Pass the values as a single space-separated list, or use the single-box-shadow mixin. See http://beta.compass-style.org/help/tutorials/upgrading/antares/ for more info.
+         on line 48 of /Users/pigats/.rvm/gems/ruby-1.9.2-p0/bundler/gems/compass-91a748a91636/frameworks/compass/stylesheets/compass/css3/_box-shadow.scss, in `box-shadow'
+         from line 58 of /Users/pigats/Sites/confess.ly/app/assets/stylesheets/screen.css.sass
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/screen.css.sass  (2244ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (2ms)  (pid 35745)
+Compiled ~/Sites/confess.ly/app/assets/stylesheets/application.css  (0ms)  (pid 35745)
+Served asset /application.css - 200 OK (2309ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:15:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:15:20 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:15:20 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:15:20 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2011-08-07 18:16:35 -0700
+  Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (79.5ms)[0m  [1mSELECT `confessions`.* FROM `confessions` [0m
+Rendered confessions/index.html.erb within layouts/application (10.7ms)
+  [1m[35mUser Load (79.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_flash.html.haml (0.1ms)
+Completed 200 OK in 1082ms (Views: 111.1ms | ActiveRecord: 968.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-07 18:16:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-07 18:16:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-08-07 18:16:37 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2011-08-07 18:16:37 -0700
+Served asset /background.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confess.png" for 127.0.0.1 at 2011-08-07 18:16:37 -0700
+Served asset /confess.png - 304 Not Modified (0ms)
